@@ -52,7 +52,7 @@ echo 'Maior de idade: '. $info_matheus['idade'] >= $maior_idade;
 
 ?>
 <?php
-
+/*
 
 $info = array('João', 21, 'Cuiabá','07785581185');
 
@@ -64,5 +64,41 @@ echo 'City from: '.$info[2];
 	echo'<br />';
 echo 'CPF: '.$info[3];	
 
+*/
+ ?> 
 
- ?>
+ <?php 
+$alunos=array('Matheus','João','Guilherme','César');
+$notas_finais=array(4.5, 3.7, 7.5,8.3);
+
+for ($contador=0; $contador < 4 ; $contador++){ 
+	
+	if ($notas_finais[$contador] < 4) {
+			echo 'Aluno: ', $alunos[$contador];
+			echo '<br />';
+			echo 'Nota:', $notas_finais[$contador];
+			echo '<br />';
+			echo 'Aluno reprovado';
+			echo '<hr>';
+	}
+	else if ($notas_finais[$contador] > 7) {
+		echo 'Aluno: ', $alunos[$contador];
+		echo '<br />';
+		echo 'Nota: ', $notas_finais[$contador];
+		echo '<br />';
+		echo 'Aluno aprovado';
+		echo '<hr>';
+	}
+	else{
+		echo 'Aluno: ', $alunos[$contador];
+		echo '<br />';
+		echo 'Notas: ', $notas_finais[$contador];
+		echo '<br />';
+		echo 'Aluno de Recuperação';
+		echo '<hr>';
+	}
+
+}
+
+
+?>

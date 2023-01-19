@@ -25,7 +25,7 @@ while($contador < 10){
 	$contador +=1;
 }
 /* Estrutura enquanto, padrão*/
-*/
+
 ?>
 
 <?php 
@@ -37,4 +37,12 @@ do{echo 'Olá Mundo!!';
 
 /* O código será executado apenas uma vez, já que, após verificação, será constatada a falsidade do código no while. Mas como ele executa antes de verificar, ao menos essa execução será feita.*/
 
+?>
+ 
+<?php 
+
+for ($contador=0; $contador < 10 ; $contador++){ 
+	echo 'Olá mundo!!';
+	echo '<br />';
+}
 ?>
